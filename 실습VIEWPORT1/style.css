@@ -1,0 +1,133 @@
+body, ul, li, h3, p{
+	margin:0px;
+	padding:0;
+}
+
+a	{
+	text-decoration:none;
+	color: gray;
+}
+
+li {
+	list-style-type:none;
+}
+
+img {
+	vertical-align:bottom;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url("/실습VIEWPORT1/images/big-perfume.png") #f4f4f4 no-repeat;
+	background-size: 35%;
+	background-position: right bottom;
+	background-attachment: fixed;
+}
+/*
+	1. 배경색 f4f4f4를 설정하고
+	큰 향수 이미지를 배경 이미지로 붙여주세요.
+
+    2. Sidebar 레이아웃만 잡아주세요.
+	너비값 300px
+
+*/
+
+/* ㅡㅡㅡ사이드ㅡㅡㅡ */
+.side_wrapper {
+	width: 300px;
+	height: 100%;
+	background-color: #303030;
+	position: fixed;
+	/* position: absolute; */
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.side_wrapper .logo {margin: 50px;}
+.side_wrapper .side_menu {
+	width: 300px;
+	height: 90px;
+	margin-bottom: 35px;
+	/* background-color: antiquewhite; */
+}
+.side_wrapper .side_menu .menu {
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.side_wrapper .side_menu.one .menu:nth-child(1):hover {background-color: black;}
+.side_wrapper .side_menu.one .menu:nth-child(2):hover {background-color: black;}
+.side_wrapper .side_menu.one .menu:nth-child(3):hover {background-color: black;}
+
+.side_wrapper .side_menu.two .menu:nth-child(1):hover {background-color: black;}
+.side_wrapper .side_menu.two .menu:nth-child(2):hover {background-color: black;}
+.side_wrapper .side_menu.two .menu:nth-child(3):hover {background-color: black;}
+/* ㅡㅡㅡ향수 메뉴ㅡㅡㅡ */
+.perfume_menu {
+	width: 960px;
+	height: auto;
+	margin-left: 300px;
+}
+.perfume_menu .menu {
+	width: 300px;
+	height: 400px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	color: purple;
+	display: inline-block;
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	/* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); */
+}
+.perfume_menu .menu .text {
+	width: 300px;
+	height: 75px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(128, 0, 128, 0.1));
+}
+.perfume_menu .menu .text p {
+	line-height: 35px;
+}
+.perfume_menu .menu:nth-child(1) {background: url("/실습VIEWPORT1/images/0.png");}
+.perfume_menu .menu:nth-child(2) {background: url("/실습VIEWPORT1/images/1.png");}
+.perfume_menu .menu:nth-child(3) {background: url("/실습VIEWPORT1/images/2.png");}
+.perfume_menu .menu:nth-child(4) {background: url("/실습VIEWPORT1/images/3.png");}
+.perfume_menu .menu:nth-child(5) {background: url("/실습VIEWPORT1/images/4.png");}
+.perfume_menu .menu:nth-child(6) {background: url("/실습VIEWPORT1/images/5.png");}
+.perfume_menu .menu:nth-child(7) {background: url("/실습VIEWPORT1/images/6.png");}
+.perfume_menu .menu:nth-child(8) {background: url("/실습VIEWPORT1/images/7.png");}
+.perfume_menu .menu:nth-child(9) {background: url("/실습VIEWPORT1/images/8.png");}
+.perfume_menu .menu:nth-child(10) {background: url("/실습VIEWPORT1/images/9.png");}
+.perfume_menu .menu:nth-child(11) {background: url("/실습VIEWPORT1/images/10.png");}
+.perfume_menu .menu:nth-child(12) {background: url("/실습VIEWPORT1/images/11.png");}
+.perfume_menu .menu:nth-child(13) {background: url("/실습VIEWPORT1/images/12.png");}
+.perfume_menu .menu:nth-child(14) {background: url("/실습VIEWPORT1/images/13.png");}
+.perfume_menu .menu:nth-child(15) {background: url("/실습VIEWPORT1/images/14.png");}
+.perfume_menu .menu:nth-child(16) {background: url("/실습VIEWPORT1/images/15.png");}
+.perfume_menu .menu:nth-child(17) {background: url("/실습VIEWPORT1/images/16.png");}
+
+@media (max-width:1024px) {
+	.side_wrapper {
+		width: 100%;
+		height: 180px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 100%;
+	}
+	.perfume_menu {
+		margin-left: 0;
+		margin-top: 300px;
+	}
+}

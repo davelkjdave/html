@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_MediaQuery01.html</title>
+    <style>
+        .info {
+            display: none;
+        }
+        .spacer {
+            height: 100px;
+            background-color: #999;
+        }
+        /* 
+            반응형
+            -> @media(반응 사이즈) {
+                div (css 속성)
+            }
+        */
+        @media(min-width:768px) {
+            .info {
+                display: block;
+            }
+            .spacer {
+                height: 200px;
+                background-color: aquamarine;
+            }
+        }
+        @media(min-width:992px) {
+            .spacer {
+                height: 300px;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="info">
+            현재 device의 폭은 최소 768px 입니다.
+        </p>
+        <div class="spacer">
+            divice 폭이 768px을 기준으로 색상이 변합니다.
+        </div>
+    </div>
+</body>
+</html>
